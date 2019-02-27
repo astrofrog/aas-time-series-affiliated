@@ -53,7 +53,7 @@ jobs:
 
   - script: |
         pip install codecov
-        codecov
+        codecov --name ${{ format(parameters.name) }}
     displayName: Reporting coverage results to codecov
     env:
       CODECOV_TOKEN: $(codecov.token)
