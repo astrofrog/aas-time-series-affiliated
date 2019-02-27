@@ -4,7 +4,6 @@ jobs:
   parameters:
     name: Linux
     os: linux
-    display: DISPLAY=:99.0
 
 - template: azure-template.yml
   parameters:
